@@ -1,0 +1,1 @@
+# Swede nvim configuration
