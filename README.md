@@ -1,5 +1,7 @@
 # Swede nvim configuration
 
+## Install
+
 ```lua
 local swedePath = '/ABSOLUTE/PATH/TO/swede-cli-1.0-SNAPSHOT.jar'
 
@@ -20,4 +22,10 @@ ftdetect/swede.vim
 
 ```vim
 autocmd BufRead,BufNewFile *.swede setfiletype swede
+```
+
+## Debug
+
+```lua
+vim.lsp.set_log_level("debug")
 ```
