@@ -12,6 +12,8 @@ require('lspconfig.configs').swede = {
     root_dir = function() return vim.fn.getcwd() end;
   }
 }
+
+require('lspconfig').swede.setup{}
 ```
 
 ftdetect/swede.vim
