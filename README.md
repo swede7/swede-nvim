@@ -2,6 +2,8 @@
 
 ## Install
 
+Add lsp configuration:
+
 ```lua
 local swedePath = '/ABSOLUTE/PATH/TO/swede-cli-1.0-SNAPSHOT.jar'
 
@@ -18,10 +20,14 @@ require('lspconfig.configs').swede = {
 require('lspconfig').swede.setup{}
 ```
 
-ftdetect/swede.vim
+Register filetype:
 
-```vim
-autocmd BufRead,BufNewFile *.swede setfiletype swede
+```lua
+vim.filetype.add({
+  extension = {
+    swede = 'swede',
+  },
+})
 ```
 
 ## Debug
